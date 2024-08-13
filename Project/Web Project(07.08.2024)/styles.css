@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+  }
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: linear-gradient(135deg, #343a40, #212529);
+    padding-top: 20px;
+    padding-left: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  .sidebar .nav-link {
+    color: #fff;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+  }
+  .sidebar .nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow-y: auto;
+  }
+  .card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  .priority-high {
+    background: linear-gradient(135deg, #ffdddd, #ffcccc);
+  }
+  .priority-medium {
+    background: linear-gradient(135deg, #fff0b3, #ffeb99);
+  }
+  .priority-low {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+  }
+  .task-row:hover {
+    background-color: #f1f1f1;
+  }
+  .btn-group .btn {
+    margin-right: 5px;
+  }
